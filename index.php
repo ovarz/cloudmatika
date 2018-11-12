@@ -22,18 +22,9 @@
 	.hs-info-button > ul{display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
 	.hs-info-button > ul > li{margin:10px; float:left; box-sizing:border-box;}
 	
-	@media screen and (min-width:0px){
-	  .hs-info{zoom:0.5;}
-	}
-	
-	@media screen and (min-width:568px){
-	  .hs-info{zoom:0.7;}
-	}
-	
-	@media screen and (min-width:768px){
-	  .hs-info{zoom:1;}
-	}
-	
+	@media screen and (min-width:0px){.hs-info{zoom:0.5;}}
+	@media screen and (min-width:568px){.hs-info{zoom:0.7;}}
+	@media screen and (min-width:768px){.hs-info{zoom:1;}}
 	@media screen and (min-width:1024px){
 	  .home-slideshow .slick-next, .home-slideshow .slick-prev{transition:all 0.4s; -moz-transition:all 0.4s; -webkit-transition:all 0.4s; -o-transition:all 0.4s;}
 	  .home-slideshow .slick-next:hover, .home-slideshow .slick-prev:hover{color:#49a5b7;}
@@ -84,7 +75,7 @@
 		infinite:true,
 		slidesToShow:1,
 		slidesToScroll:1,
-		autoplay:false,
+		autoplay:true,
 		arrows:true,
 		autoplaySpeed:5000,
 	  });
