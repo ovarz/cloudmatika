@@ -9,7 +9,7 @@
 	.home-slideshow .slick-next, .home-slideshow .slick-prev{height:100%; padding:10px; background:0; color:#FFF; z-index:1;}
 	.home-slideshow .slick-next:before, .home-slideshow .slick-prev:before{font-size:36px; color:inherit;}
 	.home-slideshow .slick-dots li button:before{color:#FFF;}
-	.hs-each{position:relative;}
+	.hs-each{position:relative; max-height:calc(100vh - 60px);}
 	.hs-each:after{display:block; content:''; padding-top:56.25%;}
 	.hs-each > *, .hs-overlay{position:absolute !important; top:0; left:0; width:100%; height:100%;}
 	.hs-imgbg{z-index:1;}
