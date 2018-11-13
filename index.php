@@ -2,7 +2,7 @@
 <?php require ('inc/header.php'); ?>
 
 <div id="rancak-framework">
-  <div class="home-slideshow">
+  <section class="home-slideshow">
     <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
     <style>
 	.home-slideshow .slick-list{padding:0;}
@@ -82,7 +82,261 @@
 	  $('.home-slideshow > div').slickAnimation();
 	});
     </script>
-  </div>
+  </section>
+
+
+
+  <section class="container">
+    <div class="reveal-delay">
+  	  <div class="container-title content_center">
+ 	    <span>
+  	      <h2>Delivering Your <b>Limitless</b> IT Infrastructure</h2>
+  	      <div class="line content_center"><span></span></div>
+  	    </span>
+  	  </div>
+
+  	  <div class="page-desc">
+  	    <p>Phasellus faucibus finibus magna convallis vulputate. Donec justo sapien, porttitor condimentum dignissim ut, fermentum a elit. Sed lorem risus, lacinia ut finibus eu, tristique eu turpis. Donec hendrerit nulla a bibendum rutrum. Fusce a diam elit. Nulla consequat ante vel odio consectetur, nec consectetur odio mollis. In hac habitasse platea dictumst. Nullam scelerisque nibh vulputate faucibus imperdiet.</p>
+  	  </div>
+  	</div>
+  </section>
+
+
+
+  <section class="container">
+    <div>
+  	  <div class="page-feature page-feature-3">
+  	  	<ul>
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-chart-line"></i></div>
+  	  	  	  <div class="pft-title">Virtual Infrastructures</div>
+  	  	  	  <div class="pft-desc">Kini anda dapat membangun infrastruktur tanpa harus investasi server. Berbagai macam pilihan infrastruktur seperti Virtual Data Center, VPS, Docker, Object Storage tersedia untuk anda.</div>
+  	  	  	</div>
+  	  	  </li>
+
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-thumbs-up"></i></div>
+  	  	  	  <div class="pft-title">Productivity & Collaboration</div>
+  	  	  	  <div class="pft-desc">Kami menyediakan berbagai tools untuk meningkatkan kinerja perusahaan anda. Dari Document Management Software, Email, Collaboration tools dan lain sebagainya.</div>
+  	  	  	</div>
+  	  	  </li>
+
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-child"></i></div>
+  	  	  	  <div class="pft-title">Safety & Security</div>
+  	  	  	  <div class="pft-desc">Kami melindungi anda dengan berbagai pilihan pengamanan kantor dan server anda seperti Cloud Firewall, Spam Filtering, Cloud Backup dan Disaster Recovery.</div>
+  	  	  	</div>
+  	  	  </li>
+
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-phone"></i></div>
+  	  	  	  <div class="pft-title">Domain & SSL Certificate</div>
+  	  	  	  <div class="pft-desc">Berbagai pilihan domain baik berupa generic top level domain maupun domain negara Indonesia dengan harga yang terjangkau. Kami juga menyediakan sertifikat SSL dengan harga murah.</div>
+  	  	  	</div>
+  	  	  </li>
+
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-child"></i></div>
+  	  	  	  <div class="pft-title">Managed Services</div>
+  	  	  	  <div class="pft-desc">Tidak memiliki tim untuk menangani masalah teknis anda? Jangan khawatir, Cloudmatika juga menyediakan layanan managed services untuk membantu anda.</div>
+  	  	  	</div>
+  	  	  </li>
+
+  	  	  <li>
+  	  	  	<div class="pft-box">
+  	  	  	  <div class="pft-icon content_center"><i class="fas fa-phone"></i></div>
+  	  	  	  <div class="pft-title">Others</div>
+  	  	  	  <div class="pft-desc">Untuk anda yang membutuhkan tingkat privacy lebih tinggi, kami juga memiliki layanan private cloud & dedicated server yang dapat anda manfaatkan untuk kebutuhan anda.</div>
+  	  	  	</div>
+  	  	  </li>
+  	  	</ul>
+  	  </div>
+    </div>
+  </section>
+
+
+
+  <section class="container company-stat">
+    <style>
+	.company-stat{position:relative; background:#212121;}
+	.cst-bg{position:absolute; z-index:1; top:0; left:0; width:100%; height:100%; background-attachment:fixed; background-position:bottom center; display:block; opacity:0.25;}
+	.cst-content{position:relative; z-index:2;}
+	.cst-content > ul{padding:100px 20px; margin:0 auto; max-width:1024px;
+	display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
+	.cst-content *{text-align:center; color:#FFF;}
+	.cst-content > ul > li{margin:20px; float:left; box-sizing:border-box;}
+	.cst-content > ul > li > span{margin-bottom:0;}
+	.cst-icon{font-size:60px;}
+	.cst-icon .fa-cubes{color:#4fb8aa;}
+	.cst-icon .fa-trophy{color:#b2cb20; font-size:50px;}
+	.cst-icon .fa-clock{color:#e84455;}
+	.cst-icon .fa-smile{color:#e16a08;}
+	.cst-number{font-size:48px; font-weight:bold;}
+	.cst-label{font-size:16px;}
+
+	@media screen and (min-width:0px) and (max-width:567px){.cst-content > ul > li{width:calc(100% - 40px);}}
+	@media screen and (min-width:568px){.cst-content > ul > li{width:calc(50% - 40px);}}
+	@media screen and (min-width:1024px){.cst-content > ul > li{width:calc(25% - 40px);}}
+	</style>
+   
+    <span class="cst-bg flex_lazy"><img data-original="img/number-bg.jpg" /></span>
+    <div class="cst-content">
+      <ul>
+      	<li class="content_center">
+     	  <span>
+      	    <div class="cst-icon content_center"><i class="fas fa-cubes"></i></div>
+      	    <div class="cst-number numcount">5124</div>
+      	    <div class="cst-label">Virtual Machines</div>
+      	  </span>
+      	</li>
+      	
+      	<li class="content_center">
+     	  <span>
+      	    <div class="cst-icon content_center"><i class="fas fa-trophy"></i></div>
+      	    <div class="cst-number numcount">8278</div>
+      	    <div class="cst-label">Productivity & Collaboration</div>
+      	  </span>
+      	</li>
+      	
+      	<li class="content_center">
+     	  <span>
+      	    <div class="cst-icon content_center"><i class="far fa-clock"></i></div>
+      	    <div class="cst-number numcount">1869</div>
+      	    <div class="cst-label">Domains</div>
+      	  </span>
+      	</li>
+      	
+      	<li class="content_center">
+     	  <span>
+      	    <div class="cst-icon content_center"><i class="far fa-smile"></i></div>
+      	    <div class="cst-number numcount">3421</div>
+      	    <div class="cst-label">Secured Client</div>
+      	  </span>
+      	</li>
+      </ul>
+    </div>
+    
+    <script>
+	$(document).ready(function(){
+	  var number_count = function(){
+	    $('.numcount').each(function () {
+		  $(this).prop('Counter',0).animate({
+		    Counter:$(this).text()
+		  },{
+			duration:2000,
+			easing:'swing',
+			step:function (now){
+			  $(this).text(Math.ceil(now));
+		    }
+		  });
+	    });
+	  };
+	  
+	  $(window).resize(function(e){
+		console.log(e);                   
+	  });
+
+	  /* header desktop */
+	  $(document).on('scroll',function() {
+		var sc = $(window).scrollTop();
+		var wh = $(window).height();
+		var ncp = $('.company-stat').position().top;
+
+		if(sc + wh >= ncp + 300){
+		  number_count();
+		  $(document).off('scroll');
+		}
+		else{}
+	  });
+	});
+	</script>
+  </section>
+
+
+
+  <section class="container product-list">
+    <div>
+  	  <div class="container-title content_center">
+ 	    <span>
+  	      <h2>Solusi untuk <b>Bisnis</b> Anda</h2>
+  	      <div class="line content_center"><span></span></div>
+  	    </span>
+  	  </div>
+
+  	  <div class="page-desc">
+  	    <p>Upgrade Bisnis Anda Dengan Cloudmatika</p>
+  	  </div>
+
+  	  <div class="product-list-1">
+  	    <ul>
+ 	      <?php for ($i=1; $i <= 5 ; $i++) { ?>
+  	      <li>
+  	      	<div class="pl1-box">
+  	      	  <div class="pl1-packname">
+  	      	  	<h3>Cloud VPS 512M</h3>
+  	      	  	<h4>Solusi Penyimpanan Data dan Aplikasi Bisnis di Cloud. Instan, Elastis, Aman dan Canggih.</h4>
+  	      	  </div>
+
+  	      	  <div class="pl1-price">
+  	      	  	<h5>110 K / bulan</h5>
+  	      	  </div>
+
+  	      	  <div class="pl1-feature">
+  	      	  	<ul>
+  	      	  	  <li>CPU 1 core @ 1.2 GHz</li>
+  	      	  	  <li>20GB storage</li>
+  	      	  	  <li>Unlimited bandwidth</li>
+  	      	  	  <li>512Mb Memory</li>
+  	      	  	  <li>24/7 security monitoring</li>
+  	      	  	  <li>24/7 technical support</li>
+  	      	  	  <li>1 Public IP Address Included</li>
+  	      	  	</ul>
+  	      	  </div>
+
+  	      	  <div class="pl1-button">
+  	      	  	<a href="javascript:void(0)" class="btn">Selengkapnya</a>
+  	      	  </div>
+  	      	</div>
+  	      </li>
+  	      <?php } ?>
+  	      
+  	      <li class="pl1-red">
+  	      	<div class="pl1-box">
+  	      	  <div class="pl1-packname">
+  	      	  	<h3>Cloud VPS 512M</h3>
+  	      	  	<h4>Solusi Penyimpanan Data dan Aplikasi Bisnis di Cloud. Instan, Elastis, Aman dan Canggih.</h4>
+  	      	  </div>
+
+  	      	  <div class="pl1-price">
+  	      	  	<h5>110 K / bulan</h5>
+  	      	  </div>
+
+  	      	  <div class="pl1-feature">
+  	      	  	<ul>
+  	      	  	  <li>CPU 1 core @ 1.2 GHz</li>
+  	      	  	  <li>20GB storage</li>
+  	      	  	  <li>Unlimited bandwidth</li>
+  	      	  	  <li>512Mb Memory</li>
+  	      	  	  <li>24/7 security monitoring</li>
+  	      	  	  <li>24/7 technical support</li>
+  	      	  	  <li>1 Public IP Address Included</li>
+  	      	  	</ul>
+  	      	  </div>
+
+  	      	  <div class="pl1-button">
+  	      	  	<a href="javascript:void(0)" class="btn">Selengkapnya</a>
+  	      	  </div>
+  	      	</div>
+  	      </li>
+  	    </ul>
+  	  </div>
+  	</div>
+  </section>
   
 
 </div>
