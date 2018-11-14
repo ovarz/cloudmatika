@@ -26,7 +26,7 @@ footer > div > ul{width:100%; max-width:1280px; margin:0 auto;
 display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
 footer > div > ul > li{float:left; margin:20px;}
 
-.footer-content{background:#4382a5; color:#FFF;}
+.footer-content{background:#384141; color:#FFF;}
 .footer-title{margin-bottom:10px;}
 .footer-title > span{position:relative; margin:0; width:100%;}
 .footer-title h2{font-family:'Poppins',sans-serif; font-size:24px; padding:10px 0; color:#FFF; font-weight:bold;}

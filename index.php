@@ -1,9 +1,9 @@
 <?php $page='home'; $subpage='home'; require ('inc/top.php'); ?>
 <?php require ('inc/header.php'); ?>
+<link href="css/slideshow.css" rel="stylesheet" type="text/css" />
 
 <div id="rancak-framework">
   <section class="home-slideshow">
-    <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
     <style>
 	.home-slideshow .slick-list{padding:0;}
 	.home-slideshow .slick-next, .home-slideshow .slick-prev{height:100%; padding:10px; background:0; color:#FFF; z-index:1;}
@@ -63,25 +63,6 @@
   	  </div>
   	  <?php } ?>
   	</div>
-  	
-    <script src="js/slideshow.js"></script>
-    <script>
-	$(window).load(function(){
-	  $('.home-slideshow > div').slick({
-	    lazyLoad:'ondemand',
-	    prevArrow:'<button type="button" data-role="none" class="slick-prev fa fa-angle-left">Previous</button>',
-		nextArrow:'<button type="button" data-role="none" class="slick-next fa fa-angle-right">Next</button>',
-		dots:true,
-		infinite:true,
-		slidesToShow:1,
-		slidesToScroll:1,
-		autoplay:true,
-		arrows:true,
-		autoplaySpeed:5000,
-	  });
-	  $('.home-slideshow > div').slickAnimation();
-	});
-    </script>
   </section>
 
 
@@ -161,7 +142,7 @@
 
 
 
-  <section class="container company-stat">
+  <section class="company-stat">
     <style>
 	.company-stat{position:relative; background:#212121;}
 	.cst-bg{position:absolute; z-index:1; top:0; left:0; width:100%; height:100%; background-attachment:fixed; background-position:bottom center; display:block; opacity:0.25;}
@@ -337,8 +318,147 @@
   	  </div>
   	</div>
   </section>
-  
 
+
+
+  <section class="client-list">
+    <style>
+	.client-list{padding:40px 20px; background:#4382a5;}
+	.client-list > div{max-width:1280px; margin:0 auto;}
+	.client-carousel .slick-list{padding:0;}
+	.client-carousel .slick-next, .client-carousel .slick-prev{height:100%; padding:10px; background:0;}
+	.client-carousel .slick-next:before, .client-carousel .slick-prev:before{font-size:24px;}
+	.cc-each img{height:80px;}
+	</style>
+    <div>
+  	  <div class="client-carousel">
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-acronis.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-cloudbric.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-dovecot.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-odin.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-ox.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-ozhosting.png" /></a>
+  	    </div>
+  	    
+  	    <div class="cc-each content_center">
+  	      <a href="javascript:void(0)" class="content_center"><img data-lazy="img/client/logo-tsukaeru.png" /></a>
+  	    </div>
+  	  </div>
+  	</div>
+  </section>
+
+
+
+  <section class="container">
+    <div class="reveal-delay">
+  	  <div class="container-title content_center">
+ 	    <span>
+  	      <h2>Kabar <b>Cloudmatika</b></h2>
+  	      <div class="line content_center"><span></span></div>
+  	    </span>
+  	  </div>
+
+  	  <div class="article-list">
+  	    <ul>
+ 	      
+ 	      <?php for ($i=1; $i <= 6 ; $i++) { ?>
+  	      <li>
+  	      	<div class="al-box">
+  	      	  <div class="al-thumb"><a href="javascript:void(0)" class="flex_lazy"><img data-original="img/sample/slide-<?php echo rand(1,5); ?>.jpg" /></a></div>
+  	      	  <div class="al-info">
+  	      	  	<div class="al-title"><a href="javascript:void(0)"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></a></div>
+  	      	  	<div class="al-desc"><p>Proin vestibulum id risus vitae bibendum. Maecenas eu placerat eros, eu fringilla nulla. Fusce euismod ultricies nisl, non feugiat orci dignissim id.</p></div>
+  	      	  	<div class="al-socmed">
+  	      	  	  <ul>
+  	      	  	  	<li><a href="javascript:void(0)" class="als-link als-fb content_center"><i class="fab fa-facebook-f"></i></a></li>
+  	      	  	  	<li><a href="javascript:void(0)" class="als-link als-tw content_center"><i class="fab fa-twitter"></i></a></li>
+  	      	  	  	<li><a href="javascript:void(0)" class="als-link als-ml content_center"><i class="far fa-envelope"></i></a></li>
+  	      	  	  	<li><a href="javascript:void(0)" class="als-link als-ld content_center"><i class="fab fa-linkedin-in"></i></a></li>
+  	      	  	  	<li><a href="javascript:void(0)" class="als-link als-wa content_center"><i class="fab fa-whatsapp"></i></a></li>
+  	      	  	  </ul>
+  	      	  	</div>
+  	      	  </div>
+  	      	</div>
+  	      </li>
+  	      <?php } ?>
+  	      
+  	    </ul>
+  	  </div>
+  	</div>
+  </section>
 </div>
 
+  	
+<script src="js/slideshow.js"></script>
+<script>
+$(window).load(function(){
+  $('.home-slideshow > div').slick({
+	lazyLoad:'ondemand',
+	prevArrow:'<button type="button" data-role="none" class="slick-prev fa fa-angle-left">Previous</button>',
+	nextArrow:'<button type="button" data-role="none" class="slick-next fa fa-angle-right">Next</button>',
+	dots:true,
+	infinite:true,
+	slidesToShow:1,
+	slidesToScroll:1,
+	autoplay:true,
+	arrows:true,
+	autoplaySpeed:5000,
+  });
+  $('.home-slideshow > div').slickAnimation();
+  
+  $('.client-carousel').slick({
+	lazyLoad:'ondemand',
+	prevArrow:'<button type="button" data-role="none" class="slick-prev fa fa-angle-left">Previous</button>',
+	nextArrow:'<button type="button" data-role="none" class="slick-next fa fa-angle-right">Next</button>',
+	dots:false,
+	infinite:true,
+	slidesToShow:5,
+	slidesToScroll:1,
+	autoplay:true,
+	arrows:true,
+	autoplaySpeed:5000,
+	responsive:[{
+	    breakpoint:1025,
+		settings:{
+		  slidesToShow:4,
+		}
+	  },
+	  {
+	    breakpoint:769,
+		settings:{
+		  slidesToShow:3,
+	  	}
+      },
+	  {
+	    breakpoint:569,
+		settings:{
+		  slidesToShow:2,
+	  	}
+      },
+	  {
+	    breakpoint:415,
+		settings:{
+		  slidesToShow:1,
+	  	}
+      }
+	]
+  });
+});
+</script>
 <?php require ('inc/footer.php'); ?>
