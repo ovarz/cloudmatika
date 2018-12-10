@@ -100,9 +100,9 @@
   	  	  	  <a href="javascript:void(0)" class="hm-link hm-mainlink content_center <?php if($page == 'layanan') { ?>curr<?php } ?>">Layanan</a>  	
   	  	  	  <div class="hm-sub">
   	  	  	  	<ul>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-manage') { ?>curr<?php } ?>">Managed Cloud</a></li>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-migration') { ?>curr<?php } ?>">Migration and Integration</a></li>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-private') { ?>curr<?php } ?>">Private Cloud</a></li>
+  	  	  	  	  <li><a href="layanan/manage.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-manage') { ?>curr<?php } ?>">Managed Cloud</a></li>
+  	  	  	  	  <li><a href="layanan/migration.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-migration') { ?>curr<?php } ?>">Migration and Integration</a></li>
+  	  	  	  	  <li><a href="layanan/private.php" class="hm-link hm-sublink content_center <?php if($subpage == 'layanan-private') { ?>curr<?php } ?>">Private Cloud</a></li>
   	  	  	  	</ul>
   	  	  	  </div>  	  	
   	  	  	</li>
@@ -110,8 +110,8 @@
   	  	  	  <a href="javascript:void(0)" class="hm-link hm-mainlink content_center <?php if($page == 'kerjasama') { ?>curr<?php } ?>">Kerjasama</a>  	
   	  	  	  <div class="hm-sub">
   	  	  	  	<ul>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'kerjasama-affiliate') { ?>curr<?php } ?>">Affiliate</a></li>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'kerjasama-reseller') { ?>curr<?php } ?>">Reseller</a></li>
+  	  	  	  	  <li><a href="kerjasama/affiliate.php" class="hm-link hm-sublink content_center <?php if($subpage == 'kerjasama-affiliate') { ?>curr<?php } ?>">Affiliate</a></li>
+  	  	  	  	  <li><a href="kerjasama/affiliate.php" class="hm-link hm-sublink content_center <?php if($subpage == 'kerjasama-reseller') { ?>curr<?php } ?>">Reseller</a></li>
   	  	  	  	</ul>
   	  	  	  </div>  	  	
   	  	  	</li>
@@ -119,16 +119,16 @@
   	  	  	  <a href="javascript:void(0)" class="hm-link hm-mainlink content_center <?php if($page == 'bantuan') { ?>curr<?php } ?>">Bantuan</a>  	
   	  	  	  <div class="hm-sub">
   	  	  	  	<ul>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'bantuan-affiliate') { ?>curr<?php } ?>">Deskripsi Bantuan</a></li>
-  	  	  	  	  <li><a href="produk/vpsl.php" class="hm-link hm-sublink content_center <?php if($subpage == 'bantuan-reseller') { ?>curr<?php } ?>">Portal Bantuan</a></li>
+  	  	  	  	  <li><a href="bantuan/deskripsi.php" class="hm-link hm-sublink content_center <?php if($subpage == 'bantuan-deskripsi') { ?>curr<?php } ?>">Deskripsi Bantuan</a></li>
+  	  	  	  	  <li><a href="bantuan/deskripsi.php" class="hm-link hm-sublink content_center <?php if($subpage == 'bantuan-portal') { ?>curr<?php } ?>">Portal Bantuan</a></li>
   	  	  	  	</ul>
   	  	  	  </div>  	  	
   	  	  	</li>
   	  	  	<li>
-  	  	  	  <a href=" " class="hm-link hm-mainlink content_center <?php if($page == 'publikasi') { ?>curr<?php } ?>">Publikasi</a>  	  	  	
+  	  	  	  <a href="publikasi/" class="hm-link hm-mainlink content_center <?php if($page == 'publikasi') { ?>curr<?php } ?>">Publikasi</a>  	  	  	
   	  	  	</li>
   	  	  	<li>
-  	  	  	  <a href=" " class="hm-link hm-mainlink content_center <?php if($page == 'kontak') { ?>curr<?php } ?>">Kontak</a>  	  	  	
+  	  	  	  <a href="kontak/" class="hm-link hm-mainlink content_center <?php if($page == 'kontak') { ?>curr<?php } ?>">Kontak</a>  	  	  	
   	  	  	</li>
   	  	  </ul>
   	  	</menu>

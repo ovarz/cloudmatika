@@ -1,4 +1,4 @@
-<?php $page='produk'; $subpage='produk-vpsl'; $tabpage='vpsl-bulanan'; require ('../inc/top.php'); ?>
+<?php $page='tentangkami'; $subpage='tentangkami-profil'; require ('../inc/top.php'); ?>
 <?php require ('../inc/header.php'); ?>
 
 <div id="rancak-framework">
@@ -86,6 +86,22 @@
 
 
 
+  <section class="container upgrade-business">
+    <div>
+      <div class="ub-container">
+  	    <div class="ub-word">
+  	  	  <h1>Upgrade Bisnis Anda Dengan Cloudmatika</h1>
+  	  	  <h2>GRATIS! konsultasi dengan expert kami selama 2 jam senilai 2 JUTA</h2>
+  	    </div>
+  	    <div class="ub-button content_center">
+  	  	  <a href="kontak/" class="btn">Konsultasi Sekarang</a>
+  	    </div>
+  	  </div>
+  	</div>
+  </section>
+
+
+
   <section class="container">
     <div>
       <style>
@@ -94,7 +110,7 @@
 	  .pd-each{display:block; position:relative;}
 	  .pd-name{margin-bottom:10px;}
 	  @media screen and (min-width:568px){
-	    .pd-name{min-height:43px;}
+	    .pd-name{min-height:43px; margin-right:150px;}
 		.pd-name > b{margin-left:0;}
 	    .pd-button{position:absolute; top:0; right:0;}
 	  }

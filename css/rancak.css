@@ -8,7 +8,7 @@ body, html{font:normal 14px/1.4 'Open Sans',sans-serif; color:#757575; overflow-
 -o-text-overflow:ellipsis; text-overflow:ellipsis; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility;}
 body{background-color:#FAFAFA; overflow-x:hidden; box-sizing:border-box; padding-top:60px;}
 a, .btn, #btt, .smooth{transition:all 0.4s; -moz-transition:all 0.4s; -webkit-transition:all 0.4s; -o-transition:all 0.4s;}
-a{color:#212121; font-weight:600;}
+a{color:#49a5b7; font-weight:600;}
 b{font-weight:600;}
 
 .btn{color:#FFF !important; background:#296190; font-weight:600; display:inline-block; padding:12px 24px; cursor:pointer; box-sizing:border-box; text-transform:uppercase;
@@ -125,6 +125,7 @@ menu > ul > li{position:relative;}
 }
 
 .page-desc p{text-align:center; line-height:22px; color:#9E9E9E; padding-bottom:10px;}
+.page-desc p b{color:#424242;}
 
 
 
@@ -246,3 +247,20 @@ transition:all 0.4s; -moz-transition:all 0.4s; -webkit-transition:all 0.4s; -o-t
   .als-link:hover{background-position:100% 100%;}
 }
 
+
+.upgrade-business > div{margin:0; background-color:#4382a5; color:#FFF;}
+.ub-container{position:relative;}
+.ub-word h1{font-size:32px; font-weight:bold; margin-bottom:5px;}
+.ub-word h2{font-size:18px;}
+
+@media screen and (min-width:0px) and (max-width:1023px){
+  .upgrade-business > div{padding:40px 20px;}
+  .ub-word > *{text-align:center;}
+  .ub-button{margin-top:10px;}
+}
+
+@media screen and (min-width:1024px){
+  .upgrade-business > div{padding:40px;}
+  .ub-word{margin-right:240px;}
+  .ub-button{position:absolute; top:0; right:0; height:100%;}
+}

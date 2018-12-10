@@ -91,6 +91,7 @@ var scroll_reveal_show = function(){
   sr.reveal('.page-feature > ul > li', 50);
   sr.reveal('.cst-content > ul > li', 50);
   sr.reveal('.article-list > ul > li', 50);
+  sr.reveal('.product-download > ul > li', 50);
 }
 /* end scroll reveal show */
 
