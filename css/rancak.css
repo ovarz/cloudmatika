@@ -124,7 +124,7 @@ menu > ul > li{position:relative;}
   .hm-produk .hm-sub > ul > li{float:left; width:calc(100% / 4); flex-basis:calc(100% / 4);}
 }
 
-.page-desc p{text-align:center; line-height:22px; color:#9E9E9E;}
+.page-desc p{text-align:center; line-height:22px; color:#9E9E9E; padding-bottom:10px;}
 
 
 

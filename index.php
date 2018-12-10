@@ -240,6 +240,64 @@
 
 
 
+  <section class="container testimonial-list">
+    <style>
+	.testimonial-list{padding:100px 20px; margin:0 auto; background:#F5F5F5;}
+	.testimonial-list > div{max-width:1280px; margin:0 auto;}
+	.testimonial-carousel{padding-bottom:45px;}
+	.testimonial-carousel .slick-list{padding:0;}
+	.ttc-each{margin:10px;}
+	.ttc-icon{margin-bottom:-24px;}
+	.ttc-circle{width:48px; height:48px; background-color:#4382a5; color:#FFF; font-size:18px;
+	-moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+	.ttc-word{background:#FFF; padding:40px 20px 70px; transition:all 0.4s; -moz-transition:all 0.4s; -webkit-transition:all 0.4s; -o-transition:all 0.4s;
+	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;}
+	.ttc-each:hover .ttc-word{background:#4382a5; color:#FFF;}
+	.ttc-person{margin-top:-50px;}
+	.ttc-photo{margin-bottom:5px;}
+	.ttc-crop{width:100px; height:100px; overflow:hidden;
+	-moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+	.ttc-name, .ttc-job{text-align:center;}
+	.ttc-name{font-size:18px; color:#212121;}
+	.ttc-job{font-size:12px;}
+	</style>
+   
+    <div>
+  	  <div class="container-title content_center">
+ 	    <span>
+  	      <h2>Apa Kata <b>Mereka</b></h2>
+  	      <div class="line content_center"><span></span></div>
+  	    </span>
+  	  </div>
+  	  
+  	  <div class="testimonial-carousel">
+  	    <?php for ($i=1; $i <= 5 ; $i++) { ?>
+  	  	<div class="ttc-each">
+ 	  	  <div class="ttc-icon content_center">
+ 	  	  	<span>
+ 	  	  	  <div class="ttc-circle content_center"><i class="fas fa-quote-right"></i></div>
+ 	  	  	</span>
+ 	  	  </div>
+  	  	  <div class="ttc-word">
+  	  	  	Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.
+  	  	  </div>
+  	  	  <div class="ttc-person">
+  	  	  	<div class="ttc-photo content_center">
+  	  	  	  <span>
+  	  	  	  	<div class="ttc-crop"><img data-lazy="img/sample/profile-<?php echo rand(1,5); ?>.jpg" /></div>
+  	  	  	  </span>
+  	  	  	</div>
+  	  	  	<div class="ttc-name">John Doe</div>
+  	  	  	<div class="ttc-job">Businessman</div>
+  	  	  </div>
+  	  	</div>
+  	  	<?php } ?>
+  	  </div>
+  	</div>
+  </section>
+
+
+
   <section class="container product-list">
     <div>
   	  <div class="container-title content_center">
@@ -435,6 +493,42 @@ $(window).load(function(){
 	autoplaySpeed:5000,
 	responsive:[{
 	    breakpoint:1025,
+		settings:{
+		  slidesToShow:4,
+		}
+	  },
+	  {
+	    breakpoint:769,
+		settings:{
+		  slidesToShow:3,
+	  	}
+      },
+	  {
+	    breakpoint:569,
+		settings:{
+		  slidesToShow:2,
+	  	}
+      },
+	  {
+	    breakpoint:415,
+		settings:{
+		  slidesToShow:1,
+	  	}
+      }
+	]
+  });
+  
+  $('.testimonial-carousel').slick({
+	lazyLoad:'ondemand',
+	dots:true,
+	infinite:true,
+	slidesToShow:5,
+	slidesToScroll:1,
+	autoplay:true,
+	arrows:false,
+	autoplaySpeed:5000,
+	responsive:[{
+	    breakpoint:1281,
 		settings:{
 		  slidesToShow:4,
 		}
